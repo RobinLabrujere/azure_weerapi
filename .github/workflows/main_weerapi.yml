@@ -21,6 +21,11 @@ jobs:
       contents: read #This is required for actions/checkout
 
     steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '24'
+           
       - name: Checkout repository
         uses: actions/checkout@v4
 
